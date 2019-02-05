@@ -16,12 +16,8 @@
 
 import { CategoryWsDTO, FacetValueWsDTO, ImageWsDTO, PriceWsDTO, VariantOptionWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import { InputSettings, TranslationService } from '@diconium/commerce-cif-hybris-core';
-import ProductVariantMapper from '../mappers/ProductVariantMapper';
-import MoneyValueMapper from '../mappers/MoneyValueMapper';
-import CategoryMapper from '../mappers/CategoryMapper';
-import AssetMapper from '../mappers/AssetMapper';
+import { ProductVariantMapper, MoneyValueMapper, CategoryMapper, AssetMapper, FacetValueMapper } from '../mappers';
 import { Attribute, FacetValue, Product, ProductVariant } from '@adobe/commerce-cif-model';
-import FacetValueMapper from '../mappers/FacetValueMapper';
 
 export class ProductsHelper {
 

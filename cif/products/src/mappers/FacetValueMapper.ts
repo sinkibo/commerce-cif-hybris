@@ -18,7 +18,7 @@ import { InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { Attribute, FacetValue } from '@adobe/commerce-cif-model';
 import { FacetValueWsDTO, FacetWsDTO } from '@diconium/commerce-cif-hybris-clients';
 
-export default class FacetValueMapper extends Mapper<FacetValue> {
+export class FacetValueMapper extends Mapper<FacetValue> {
 
   constructor(settings: InputSettings) {
     super(settings);

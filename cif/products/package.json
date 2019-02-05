@@ -13,8 +13,9 @@
     "@diconium/commerce-cif-hybris-validators": "^1.0.0"
   },
   "scripts": {
-    "build": "npm run clean && tsc -b .",
+    "build": "npm run clean && npm run generate-barrels && tsc -b .",
     "clean": "rimraf lib/",
+    "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory src/mappers",
     "deploy": "serverless deploy",
     "remove": "serverless remove",
     "deploy-current": "npm run deploy -- --ow-package $npm_package_owname@$npm_package_version --shared",
@@ -28,5 +29,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/diconium/commerce-cif-hybris.git"
   }
 }

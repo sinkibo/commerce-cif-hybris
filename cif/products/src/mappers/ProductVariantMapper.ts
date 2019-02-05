@@ -20,7 +20,7 @@ import { ProductWsDTO, VariantOptionWsDTO } from '@diconium/commerce-cif-hybris-
 import { ProductsHelper } from '../helpers/ProductsHelper';
 import { dahcTranslator } from '@diconium/commerce-cif-hybris-i18n';
 
-export default class ProductVariantMapper extends Mapper<ProductVariant> {
+export class ProductVariantMapper extends Mapper<ProductVariant> {
 
   constructor(settings: InputSettings) {
     super(settings, dahcTranslator);

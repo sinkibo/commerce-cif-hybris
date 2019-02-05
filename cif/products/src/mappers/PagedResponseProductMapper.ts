@@ -17,12 +17,12 @@
 import { InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { PagedResponseProduct } from '@adobe/commerce-cif-model';
 import { ProductSearchPageWsDTO } from '@diconium/commerce-cif-hybris-clients';
-import ProductMapper from './ProductMapper';
-import FacetMapper from './FacetMapper';
+import { ProductMapper } from './ProductMapper';
+import { FacetMapper } from './FacetMapper';
 import { PagedResponseHelper } from '../helpers/PagedResponseHelper';
 import { dahcTranslator } from '@diconium/commerce-cif-hybris-i18n';
 
-export default class PagedResponseProductMapper extends Mapper<PagedResponseProduct> {
+export class PagedResponseProductMapper extends Mapper<PagedResponseProduct> {
 
   constructor(settings: InputSettings) {
     super(settings, dahcTranslator);

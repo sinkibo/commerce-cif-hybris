@@ -18,7 +18,7 @@ import { InputSettings, Mapper, MathUtils } from '@diconium/commerce-cif-hybris-
 import { MoneyValue } from '@adobe/commerce-cif-model';
 import { PriceWsDTO } from '@diconium/commerce-cif-hybris-clients';
 
-export default class MoneyValueMapper extends Mapper<MoneyValue> {
+export class MoneyValueMapper extends Mapper<MoneyValue> {
 
   constructor(settings: InputSettings) {
     super(settings);

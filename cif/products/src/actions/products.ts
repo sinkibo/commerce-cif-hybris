@@ -17,9 +17,8 @@
 import { PagedResponseProduct, Product } from '@adobe/commerce-cif-model';
 import { Input, Output, SimpleAction } from '@diconium/commerce-cif-hybris-core';
 import GetProductByIdClient from '../clients/GetProductByIdClient';
-import ProductMapper from '../mappers/ProductMapper';
+import { ProductMapper, PagedResponseProductMapper } from '../mappers';
 import SearchProductClient from '../clients/SearchProductClient';
-import PagedResponseProductMapper from '../mappers/PagedResponseProductMapper';
 
 const ERROR_TYPE = 'ProductError';
 

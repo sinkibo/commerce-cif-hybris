@@ -18,7 +18,7 @@ import { InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { Category } from '@adobe/commerce-cif-model';
 import { CategoryWsDTO } from '@diconium/commerce-cif-hybris-clients';
 
-export default class CategoryMapper extends Mapper<Category> {
+export class CategoryMapper extends Mapper<Category> {
 
   constructor(settings: InputSettings) {
     super(settings);

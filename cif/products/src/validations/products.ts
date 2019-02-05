@@ -17,8 +17,7 @@
 import { Product, PagedResponseProduct } from '@adobe/commerce-cif-model';
 import { Input } from '@diconium/commerce-cif-hybris-core';
 import { Validator } from '@diconium/commerce-cif-hybris-validators';
-import ProductMapper from '../mappers/ProductMapper';
-import PagedResponseProductMapper from '../mappers/PagedResponseProductMapper';
+import { ProductMapper, PagedResponseProductMapper } from '../mappers';
 
 const ERROR_TYPE = 'ProductError';
 

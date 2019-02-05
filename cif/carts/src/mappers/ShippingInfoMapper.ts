@@ -17,7 +17,7 @@
 import { InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { ShippingInfo, TaxInfo } from '@adobe/commerce-cif-model';
 import { DeliveryModeWsDTO, PriceWsDTO } from '@diconium/commerce-cif-hybris-clients';
-import MoneyValueMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/MoneyValueMapper';
+import { MoneyValueMapper } from '../../../products/src';
 
 export default class ShippingInfoMapper extends Mapper<ShippingInfo> {
 

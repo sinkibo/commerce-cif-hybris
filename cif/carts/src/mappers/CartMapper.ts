@@ -22,7 +22,7 @@ import AddressMapper from './AddressMapper';
 import ShippingInfoMapper from './ShippingInfoMapper';
 import PaymentMapper from './PaymentMapper';
 import CouponListMapper from './CouponListMapper';
-import MoneyValueMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/MoneyValueMapper';
+import { MoneyValueMapper } from '../../../products/src/mappers';
 
 export default class CartMapper extends Mapper<Cart> {
 

@@ -19,7 +19,7 @@ import { Attribute, Facet } from '@adobe/commerce-cif-model';
 import { FacetValueWsDTO, FacetWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import { ProductsHelper } from '../helpers/ProductsHelper';
 
-export default class FacetMapper extends Mapper<Facet> {
+export class FacetMapper extends Mapper<Facet> {
 
   constructor(settings: InputSettings) {
     super(settings);
