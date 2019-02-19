@@ -1,6 +1,5 @@
 export * from './AssetMapper';
 export * from './CategoryMapper';
-export * from './CustomMoneyValueMapper';
 export * from './FacetMapper';
 export * from './FacetValueMapper';
 export * from './MoneyValueMapper';

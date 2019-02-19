@@ -17,7 +17,7 @@
 import { InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { CartEntry } from '@adobe/commerce-cif-model';
 import { OrderEntryWsDTO, ProductWsDTO } from '@diconium/commerce-cif-hybris-clients';
-import { MoneyValueMapper, ProductMapper } from '../../../products/src'; // from '@diconium/commerce-cif-hybris-products';
+import { MoneyValueMapper, ProductMapper } from '@diconium/commerce-cif-hybris-products';
 
 export default class CartEntryMapper extends Mapper<CartEntry> {
 
