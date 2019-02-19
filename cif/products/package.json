@@ -15,7 +15,7 @@
   "scripts": {
     "build": "npm run clean && npm run generate-barrels && tsc -b .",
     "clean": "rimraf lib/",
-    "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory src/mappers",
+    "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory src/mappers && barrelsby --delete --singleQuotes --location all --directory src/clients",
     "deploy": "serverless deploy",
     "remove": "serverless remove",
     "deploy-current": "npm run deploy -- --ow-package $npm_package_owname@$npm_package_version --shared",
